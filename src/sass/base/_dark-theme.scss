@@ -1,0 +1,31 @@
+.dark-theme{
+    background-color: #282626;
+    color: #ffffff;
+transition: background-image 2.5s ease-in-out;
+}
+
+.body {
+    transition: background-color  2.5s ease-in-out;
+   
+}
+
+.header-dark{
+    background-image: url('/src/images/dark-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.footer__dark{
+    background-color: #1b1a1a;
+
+}
+
+.footer-text__dark{
+    color: #ffffff;
+   
+}
+
+.footer-link__dark{
+    color: #fb0202;
+}

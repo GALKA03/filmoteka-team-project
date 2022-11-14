@@ -1,0 +1,112 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 0;
+    list-style: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    color: var(--primary_color);
+}
+
+.pagination:before {
+    display: table;
+    content: ' ';
+}
+
+.pagination:after {
+    display: table;
+    clear: both;
+    content: ' ';
+}
+
+.pagination_item {
+    float: left;
+    margin: 0 2px;
+    padding: 0;
+}
+
+.pagination_link {
+    border: 1px solid transparent;
+    display: block;
+    margin: 0;
+    padding: 0 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary_color);
+    // border: 1px solid #0ff;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.pagination_link:hover {
+    border: 1px solid var(--secondary_color);
+}
+
+.pagination_span {
+    display: inline;
+    padding: 7px 10px;
+    cursor: default;
+    text-align: center;
+    color: var(--primary_color);
+}
+
+.pagination_bullet {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 38px;
+    border-radius: 50%;
+        color: var(--primary_color);
+            // border: 1px solid var(--secondary_color);
+            outline: none;
+            background-color: #F7F7F7;
+
+    &:hover {
+        outline: 1px solid var(--secondary_color);
+    }
+}
+
+.pagination_bullet_link {
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+.pagination_bullet.disabled {
+    background-color: transparent;
+        cursor: not-allowed;
+            display: none;
+            color: #999;
+            border: 1px solid #ccc;
+            outline: none;
+            background-color: #fff;
+}
+
+.pagination_item.active > .pagination_link,
+.pagination_item.active > .pagination_link:hover,
+.pagination_item.active > .pagination_link:focus {
+    cursor: default;
+    color: #fff;
+    border: 1px solid var(--secondary_color);
+    outline: none;
+    background-color: var(--secondary_color);
+}
+
+.pagination_item.disabled > .pagination_link,
+.pagination_item.disabled > .pagination_link:hover,
+.pagination_item.disabled > .pagination_link:focus {
+    cursor: not-allowed;
+    display: none;
+    color: #999;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #fff;
+}
+
+.container-pagination{
+    padding-top: 46px;
+}
